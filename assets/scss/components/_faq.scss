@@ -1,0 +1,80 @@
+@use '../abstract/breakpoints' as *;
+@use '../abstract/colors' as *;
+@use "../abstract/fonts" as *;
+@use '../abstract/functions' as *;
+@use '../abstract/mixins' as *;
+
+
+.faq-section {
+    // max-width: 1204px;
+    margin: 20px auto;
+}
+  
+.faq-text{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+    max-width: 710px;
+    text-transform: capitalize;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding-block: em(24);
+}
+
+.faq-question {
+  display: flex;
+  &:hover{
+    cursor: pointer;
+    color:$clr-secondary;
+  }
+  &.active{
+    color:$clr-secondary;
+  }
+}
+
+.faq-number {
+  margin-right: rem(16);
+  color:$clr-secondary;
+  font-size: 24px;
+  font-weight: 600;
+  @include breakpoint-sm{
+    margin-right: rem(28);
+  }
+  @include breakpoint-md{
+    margin-right: rem(36);
+  }
+  @include breakpoint-lg{
+    margin-right: rem(44);
+  }
+}
+
+.faq-toggle {
+  margin-left: auto;
+  font-size: rem(24);
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding-inline:em(32);
+  @include transition(max-height, 0.35s, ease-in-out);
+  @include breakpoint-md{
+    padding-inline:em(36);
+  }
+  @include breakpoint-lg{
+    padding-inline:em(48);
+  }
+  &.show-answer{
+    max-height: 1000px; /* Adjust this value based on your content */
+  }
+  p{
+    margin: 0;
+    padding-block:em(16);
+  }
+}
+
+  

@@ -1,0 +1,37 @@
+// --------- RedHatDisplay Regular-------------
+@font-face{
+    font-family:"RedHatDisplay Regular";
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-Regular.eot");
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-Regular.woff2") format('woff2'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-Regular.woff") format('woff'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-Regular.ttf") format('truetype'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.svg#RedHatDisplay") format('svg');
+    font-weight:400;
+}
+
+// --------- RedHatDisplay Semi-Bold -------------
+@font-face{
+    font-family:"RedHatDisplay SemiBold";
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.eot");
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.woff2") format('woff2'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.woff") format('woff'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.ttf") format('truetype'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-SemiBold.svg#RedHatDisplay") format('svg');
+    font-weight:600;
+}
+
+// --------- RedHatDisplay Extra-Bold -------------
+@font-face{
+    font-family:"RedHatDisplay ExtraBold";
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-ExtraBold.eot");
+    src:url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-ExtraBold.woff2") format('woff2'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-ExtraBold.woff") format('woff'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-ExtraBold.ttf") format('truetype'),
+    url("../../../assets/fonts/RedhatDisplay/RedHatDisplay-ExtraBold.svg#RedHatDisplay") format('svg');
+    font-weight:800 !important;
+}
+
+
+$ff-rhd-regular:"RedHatDisplay Regular", sans-serif;
+$ff-rhd-semibold:"RedHatDisplay SemiBold", sans-serif;
+$ff-rhd-extrabold:"RedHatDisplay ExtraBold", sans-serif;

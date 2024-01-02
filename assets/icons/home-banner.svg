@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="845" viewBox="0 0 1366 845">
+    <defs>
+        <radialGradient id="5l9futw5ya" cx=".823" cy=".571" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#515151"/>
+            <stop offset="1"/>
+        </radialGradient>
+    </defs>
+    <path data-name="649c16ae47357d8c65bdf717_Home Banner" style="fill:url(#5l9futw5ya)" d="M0 0h1366v845H0z"/>
+</svg>

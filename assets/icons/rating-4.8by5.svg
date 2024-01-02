@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.313" height="38.309" viewBox="0 0 155.313 38.309">
+    <g data-name="Group 119">
+        <text data-name="Rated 4.8 out 5" transform="translate(45.313 33.309)" style="fill:#fff;font-size:16px;font-family:RedHatDisplay-Regular,Red Hat Display"><tspan x="0" y="0">Rated 4.8 out 5</tspan></text>
+        <g data-name="Group 37">
+            <path data-name="Icon ionic-md-star" d="m12.012 17.054 5.077 3.063-1.343-5.778 4.481-3.885-5.907-.507L12.012 4.5 9.7 9.947l-5.9.507 4.482 3.885-1.347 5.778z" transform="translate(41.516 -4.5)" style="fill:#c8102e"/>
+            <path data-name="Icon ionic-md-star" d="m12.012 17.054 5.077 3.063-1.343-5.778 4.481-3.885-5.907-.507L12.012 4.5 9.7 9.947l-5.9.507 4.482 3.885-1.347 5.778z" transform="translate(64.658 -4.5)" style="fill:#c8102e"/>
+            <path data-name="Icon ionic-md-star" d="m12.012 17.054 5.077 3.063-1.343-5.778 4.481-3.885-5.907-.507L12.012 4.5 9.7 9.947l-5.9.507 4.482 3.885-1.347 5.778z" transform="translate(87.801 -4.5)" style="fill:#c8102e"/>
+            <path data-name="Icon ionic-md-star" d="m12.012 17.054 5.077 3.063-1.343-5.778 4.481-3.885-5.907-.507L12.012 4.5 9.7 9.947l-5.9.507 4.482 3.885-1.347 5.778z" transform="translate(110.943 -4.5)" style="fill:#c8102e"/>
+            <path data-name="Icon ionic-md-star" d="m12.012 17.054 5.077 3.063-1.343-5.778 4.481-3.885-5.907-.507L12.012 4.5 9.7 9.947l-5.9.507 4.482 3.885-1.347 5.778z" transform="translate(134.085 -4.5)" style="fill:#c8102e"/>
+        </g>
+        <g data-name="search (2)">
+            <path data-name="Path 1116" d="m8.49 151.073-1.333 4.978-4.874.1a19.188 19.188 0 0 1-.141-17.886l4.339.8 1.9 4.313a11.431 11.431 0 0 0 .107 7.7z" transform="translate(0 -127.923)" style="fill:#fbbb00"/>
+            <path data-name="Path 1117" d="M280.027 208.176a19.147 19.147 0 0 1-6.828 18.516l-5.465-.279-.773-4.829a11.416 11.416 0 0 0 4.912-5.829h-10.245v-7.578h18.4z" transform="translate(-242.053 -192.6)" style="fill:#518ef8"/>
+            <path data-name="Path 1118" d="M59.371 320.349a19.16 19.16 0 0 1-28.863-5.86l6.207-5.081a11.392 11.392 0 0 0 16.416 5.833z" transform="translate(-28.226 -286.259)" style="fill:#28b446"/>
+            <path data-name="Path 1119" d="m57.863 4.41-6.205 5.08a11.39 11.39 0 0 0-16.793 5.964l-6.24-5.109A19.158 19.158 0 0 1 57.863 4.41z" transform="translate(-26.482)" style="fill:#f14336"/>
+        </g>
+    </g>
+</svg>

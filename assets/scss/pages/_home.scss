@@ -1,0 +1,296 @@
+@use "../abstract/breakpoints" as *;
+@use "../abstract/colors" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/functions" as *;
+@use "../abstract/mixins" as *;
+
+
+//?--------- Hero Styles Start ---------
+.hero{
+    background-image: radial-gradient(circle at 82% 57%, #515151, #000 56%);
+    padding-block:  em(180) em(85);
+    position: relative;
+
+    &__stat-title{
+        color:$clr-grey-light-5;
+        font-size: rem(16);
+        line-height: 2;
+    }
+    &__stat{
+        h3, p{
+            color:$clr-white;
+        }
+        p{
+            font-size: rem(16);
+            line-height: 1.25;
+            margin-top: 0;
+        }
+    }
+    &__right{
+        background-image: url("/assets/images/home/arrowfish-a.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        display: none;
+        @include breakpoint-lg{
+            display: block;
+        }
+    }
+
+}
+
+.marquee-container{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    img{
+        mix-blend-mode: exclusion;
+        white-space:nowrap;
+        animation:move-text 16s linear infinite ;
+        -webkit-animation:move-text 16s linear infinite ;
+        @keyframes move-text{
+            0%{
+                transform:translateX(-100%);
+            }
+            100%{
+                transform:translateX(0%);
+            }
+        }
+    }
+}
+
+.business-value{
+    figure{
+        position: relative;
+    }
+    &__bottom{
+        p{
+            font-size: rem(16);
+            line-height: 1.78;
+            @include breakpoint-md{
+                font-size: rem(18);
+            }
+        }
+    }
+}
+
+.experiences-box{
+    width: rem(120);
+    height:  rem(120);
+    border: 2px solid $clr-white;
+    background-color: $clr-primary;
+    @include flex-center;
+    flex-direction: column;
+    @include border-radius(50%);
+    position: absolute;
+    top: 70%;
+    left: -30px;
+    @include breakpoint-sm{
+        width: rem(140);
+        height:  rem(140);
+    }
+    @include breakpoint-md{
+        width: rem(160);
+        height:  rem(160);
+    }
+    @include breakpoint-lg{
+        width: rem(180);
+        height:  rem(180);
+    }
+    h1, p{
+        color:$clr-white;
+        text-align: center;
+    }
+    p{
+        font-size: rem(14);
+        line-height: 1.25;
+        text-transform: capitalize;
+        @include breakpoint-md{
+            font-size: rem(16);
+        }
+    }
+}
+
+.about-owner{
+    background-image: radial-gradient(circle at 82% 57%, #515151, #000 58%);
+    h4{
+        &::first-letter{
+            text-transform: uppercase !important;
+        }
+        text-transform: lowercase;
+    }
+    h4, p, small{
+        color:$clr-white;
+    }
+    &--experience{
+        background: $clr-secondary;
+        top: 62%;
+        left: -10px;
+    }
+}
+
+
+.testimonials{
+    object-fit: contain;
+    background-color: $clr-primary;
+    figcaption{
+        small{
+            margin-top: 0;
+            color: #b5b5b5;
+        }
+    }
+}
+
+
+.services{
+    background: $clr-tertiary;
+    .service-card{
+        // max-width: 287px;
+        min-height: 160px;
+        padding: 25px;
+        box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.12);
+        background-color: $clr-white;
+        border:1px solid $clr-white;
+        @include transition(border-color, 0.45s, ease-in-out);
+        &:hover{
+            cursor: pointer;
+            border-color: $clr-secondary;
+        }
+    }
+}
+
+.cta{
+    background-image: radial-gradient(circle at 82% 57%, #515151, #000 57%);
+    &__figure{
+        display: flex;
+        align-items: center;
+        figcaption{
+            small{
+                display: flex;
+                font-size: 1rem;
+                line-height: 1.75;
+                color:$clr-tertiary;
+            }
+        }
+    }
+    .about-owner--experience{
+        top: 68%;
+    }
+}
+
+
+//?--------- FAQs Styles Start ---------
+.faq{
+    &__wrapper{
+        @include breakpoint-sm{
+            padding-inline:1rem;
+        }
+        @include breakpoint-md{
+            padding-inline:3rem;
+        }
+        @include breakpoint-lg{
+            padding-inline:7rem;
+        }
+        @include breakpoint-xl{
+            padding-inline:11rem;
+        }
+        @include breakpoint-xxl{
+            padding-inline:15rem;
+        }    
+    }
+    &__summary{
+        list-style: none;
+        @include flex-center-horizontal;
+        align-items: center;
+        gap:rem(48);
+        @include transition(all, 0.35s, ease);
+        position: relative;
+        @include breakpoint-sm{
+            justify-content: space-between;
+        }
+        &::-webkit-details-marker{
+            display: none;
+        }
+        &::after{
+            @include caret-down;
+            border-width: 0.5em;
+            top: 50%;
+            right: 0;
+            transform:translateY(-50%);
+            @include transition(all, 0.35s, ease);
+        }
+        &:hover{
+            cursor: pointer;
+            h4{
+                color:$clr-secondary;
+            }
+            &::after{
+                border-top-color: $clr-secondary;
+            }
+        }
+        h4{
+            max-width: 840px;
+        }
+    }
+    &__details{
+        border-bottom: 1px solid  $clr-grey-light-2;
+        padding: em(26) em(16);
+        &:first-child{
+            border-top:1px solid $clr-grey-light-2;
+        }
+        &:hover{
+            background: $clr-white-90;
+        }
+    }
+}
+
+.faq__details[open] .faq__summary > h4{
+    margin-bottom: .5em;
+    color:$clr-secondary;
+}
+
+.faq__details[open] .faq__summary:after{
+    top: 40%;
+    border-top-color: $clr-secondary;
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.faq__details[open] p{
+  line-height: 1.8;
+}
+//?--------- FAQs Styles End ---------
+
+
+// Connect-with us
+.connect-with-us{
+    background: $clr-tertiary;
+    padding-block: em(64);
+    @include breakpoint-lg{
+        padding-block: em(106);
+    }
+    figure{
+        width: rem(80);
+        height: rem(80);
+        padding: 21px;
+        background-color: $clr-secondary;
+        @include flex-center;
+        @include border-radius(50%);
+    }
+    &__btn{
+        font-size: rem(18);
+        line-height: 1.78;
+        font-weight: 800;
+        color:$clr-secondary;
+        display: flex;
+        align-items: center;
+        margin-top: rem(8);
+        @include breakpoint-sm{
+            margin-top: rem(16);
+        }
+        @include breakpoint-md{
+            margin-top: rem(24);
+        }
+    }
+}
