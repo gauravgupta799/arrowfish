@@ -6,7 +6,6 @@
 
 
 .faq-section {
-    // max-width: 1204px;
     margin: 20px auto;
 }
   
@@ -69,6 +68,7 @@
     padding-inline:em(48);
   }
   &.show-answer{
+    transition-duration: 1s;
     max-height: 1000px; /* Adjust this value based on your content */
   }
   p{

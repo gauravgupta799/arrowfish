@@ -18,9 +18,9 @@ $breakpoints: (
 // Null is mobile, no breakpoint.
 $p-font-sizes: (
   null:(rem(16), rem(32)), // Font sizes and line height 
-  sm: (rem(16), rem(32)),
+  sm: (rem(18), rem(32)),
   md: (rem(18), rem(32)),
-  lg: (rem(18), rem(32)),
+  lg: (rem(20), rem(32)),
   xl: (rem(20), rem(32)),
   xxl:(rem(22), rem(36)), 
 );

@@ -28,5 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleButton.textContent = answerSection.classList.contains('show-answer') ? '-' : '+';
       });
     });
-  });
+});
   
+// swiper
+var swiper = new Swiper(".steps-swiper", {
+  slidesPerView: 1.4,
+  // centeredSlides: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  breakpoints:{
+    576:{
+      slidesPerView: 2.2,
+    },
+    1024:{
+      slidesPerView: 3.2,
+    },
+    1280:{
+      slidesPerView: 4.2,
+    },
+  }
+});

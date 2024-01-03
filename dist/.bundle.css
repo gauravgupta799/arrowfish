@@ -1136,7 +1136,7 @@ p, ul, ol, body {
 }
 @media screen and (min-width: 36em) {
   p, ul, ol, body {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 2rem;
   }
 }
@@ -1148,7 +1148,7 @@ p, ul, ol, body {
 }
 @media screen and (min-width: 62em) {
   p, ul, ol, body {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 2rem;
   }
 }
@@ -11457,6 +11457,7 @@ p, ul, ol, body {
   }
 }
 .faq-answer.show-answer {
+  transition-duration: 1s;
   max-height: 1000px; /* Adjust this value based on your content */
 }
 .faq-answer p {
@@ -11490,8 +11491,6 @@ p, ul, ol, body {
 }
 
 .form-wrapper {
-  min-height: 587px;
-  margin-bottom: 1rem;
   padding: 1.5em 1em 1.5em;
   border-radius: 4px;
   background-color: #fff;
@@ -11514,7 +11513,6 @@ p, ul, ol, body {
 
 .hero {
   background-image: radial-gradient(circle at 82% 57%, #515151, #000 56%);
-  padding-block: 11.25em 5.3125em;
   position: relative;
 }
 .hero__stat-title {
@@ -11531,17 +11529,33 @@ p, ul, ol, body {
   margin-top: 0;
 }
 .hero__right {
+  display: flex;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 992px) and (min-width: 1400px) {
+  .hero__right {
+    position: absolute;
+    bottom: 0;
+  }
+  .hero__right img {
+    position: relative;
+    left: -100px;
+  }
+}
+.hero__wrapper {
   background-image: url("/assets/images/home/arrowfish-a.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  display: none;
+  background-position: 115% bottom;
+  background-size: contain;
 }
 @media only screen and (min-width: 62em) {
-  .hero__right {
-    display: block;
+  .hero__wrapper {
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 100em) {
+  .hero__wrapper {
+    background-position: 100% bottom;
   }
 }
 
@@ -11590,18 +11604,20 @@ p, ul, ol, body {
   border-radius: 50%;
   position: absolute;
   top: 70%;
-  left: -30px;
+  left: 0px;
 }
 @media only screen and (min-width: 36em) {
   .experiences-box {
     width: 8.75rem;
     height: 8.75rem;
+    left: -20px;
   }
 }
 @media only screen and (min-width: 48em) {
   .experiences-box {
     width: 10rem;
     height: 10rem;
+    left: -30px;
   }
 }
 @media only screen and (min-width: 62em) {
@@ -11629,10 +11645,10 @@ p, ul, ol, body {
   background-image: radial-gradient(circle at 82% 57%, #515151, #000 58%);
 }
 .about-owner h4 {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
-.about-owner h4::first-letter {
-  text-transform: uppercase !important;
+.about-owner h4 span {
+  text-transform: capitalize;
 }
 .about-owner h4, .about-owner p, .about-owner small {
   color: #fff;
@@ -11643,10 +11659,92 @@ p, ul, ol, body {
   left: -10px;
 }
 
+.steps__swiperContainer {
+  padding-left: 1em;
+}
+@media only screen and (min-width: 36em) {
+  .steps__swiperContainer {
+    padding-left: 4em;
+  }
+}
+.steps .step-card {
+  height: 17.5rem;
+  padding-inline: 1em;
+  padding-block: 4.625em 2.5em;
+  border-radius: 16px;
+  border: 1px solid #707070;
+  background-color: #fff;
+  position: relative;
+}
+.steps .step-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #303030 1px, transparent 1px);
+  background-size: 3px 1px; /* Set the size of each dot */
+  background-repeat: repeat-x; /* Repeat the dots horizontally */
+  z-index: -1;
+}
+.steps .step-card .icon-box {
+  max-width: 90px;
+  height: 90px;
+  padding: 25px;
+  background-color: #c8102e;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+}
+.steps .step-card p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
 .testimonials {
-  -o-object-fit: contain;
-     object-fit: contain;
   background-color: #000;
+}
+.testimonials__card {
+  padding: 1em;
+  background-color: #2e2e2e;
+  text-align: left;
+}
+@media only screen and (min-width: 48em) {
+  .testimonials__card {
+    padding: 1.5em;
+  }
+}
+.testimonials__card h6, .testimonials__card p {
+  color: #fff;
+}
+.testimonials__card .stars-img {
+  margin-left: -10px;
+}
+.testimonials__card .card-content h6 {
+  font-weight: 400 !important;
+  line-height: 1.33 !important;
+  text-transform: lowercase;
+}
+.testimonials__card .card-content h6::first-letter {
+  text-transform: uppercase;
+}
+.testimonials__card .card-content p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.testimonials__card .card-footer figure {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.testimonials__card .card-footer figure h6 {
+  font-size: 20px;
+}
+.testimonials__card .card-footer figure p {
+  font-size: 16px;
+  line-height: 1.25;
 }
 .testimonials figcaption small {
   margin-top: 0;
@@ -11658,11 +11756,16 @@ p, ul, ol, body {
 }
 .services .service-card {
   min-height: 160px;
-  padding: 25px;
+  padding: 1.125em;
   box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.12);
   background-color: #fff;
   border: 1px solid #fff;
   transition: border-color 0.45s ease-in-out;
+}
+@media only screen and (min-width: 85.375em) {
+  .services .service-card {
+    padding: 1.5em;
+  }
 }
 .services .service-card:hover {
   cursor: pointer;
@@ -11684,101 +11787,6 @@ p, ul, ol, body {
 }
 .cta .about-owner--experience {
   top: 68%;
-}
-
-@media only screen and (min-width: 36em) {
-  .faq__wrapper {
-    padding-inline: 1rem;
-  }
-}
-@media only screen and (min-width: 48em) {
-  .faq__wrapper {
-    padding-inline: 3rem;
-  }
-}
-@media only screen and (min-width: 62em) {
-  .faq__wrapper {
-    padding-inline: 7rem;
-  }
-}
-@media only screen and (min-width: 85.375em) {
-  .faq__wrapper {
-    padding-inline: 11rem;
-  }
-}
-@media only screen and (min-width: 100em) {
-  .faq__wrapper {
-    padding-inline: 15rem;
-  }
-}
-.faq__summary {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  transition: all 0.35s ease;
-  position: relative;
-}
-@media only screen and (min-width: 36em) {
-  .faq__summary {
-    justify-content: space-between;
-  }
-}
-.faq__summary::-webkit-details-marker {
-  display: none;
-}
-.faq__summary::after {
-  content: "";
-  position: absolute;
-  right: 1rem;
-  top: 55%;
-  pointer-events: none;
-  border-left: 0.35rem solid transparent;
-  border-right: 0.35rem solid transparent;
-  border-top: 0.35rem solid #000;
-  border-width: 0.5em;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  transition: all 0.35s ease;
-}
-.faq__summary:hover {
-  cursor: pointer;
-}
-.faq__summary:hover h4 {
-  color: #c8102e;
-}
-.faq__summary:hover::after {
-  border-top-color: #c8102e;
-}
-.faq__summary h4 {
-  max-width: 840px;
-}
-.faq__details {
-  border-bottom: 1px solid #a2a2a2;
-  padding: 1.625em 1em;
-}
-.faq__details:first-child {
-  border-top: 1px solid #a2a2a2;
-}
-.faq__details:hover {
-  background: #f4f4f4;
-}
-
-.faq__details[open] .faq__summary > h4 {
-  margin-bottom: 0.5em;
-  color: #c8102e;
-}
-
-.faq__details[open] .faq__summary:after {
-  top: 40%;
-  border-top-color: #c8102e;
-  transform: translateY(-50%) rotate(-180deg);
-}
-
-.faq__details[open] p {
-  line-height: 1.8;
 }
 
 .connect-with-us {
@@ -11808,6 +11816,7 @@ p, ul, ol, body {
   display: flex;
   align-items: center;
   margin-top: 0.5rem;
+  transition: transform 0.35s ease-out;
 }
 @media only screen and (min-width: 36em) {
   .connect-with-us__btn {
@@ -11818,6 +11827,9 @@ p, ul, ol, body {
   .connect-with-us__btn {
     margin-top: 1.5rem;
   }
+}
+.connect-with-us__btn:hover {
+  transform: translateX(10px);
 }
 
 .header {
@@ -12029,56 +12041,20 @@ p, ul, ol, body {
   font-size: 1.125rem;
 }
 .header__logo img {
-  display: flex;
-  width: 6.25rem;
-}
-@media only screen and (min-width: 48em) {
-  .header__logo img {
-    width: 6.875rem;
-  }
+  max-width: 12.5rem;
 }
 @media only screen and (min-width: 62em) {
   .header__logo img {
-    width: auto;
+    max-width: 100%;
   }
 }
-.header__btnWrapper {
-  display: flex;
-}
-
-.hamburger {
-  width: 2rem;
-  height: 0.75rem;
-  display: block;
-  cursor: pointer;
-}
-@media only screen and (min-width: 36em) {
-  .hamburger {
-    width: 2.25rem;
-  }
-}
-@media only screen and (min-width: 36em) {
-  .hamburger {
-    width: 2.5rem;
-  }
+.header .btn-wrapper {
+  display: none;
 }
 @media only screen and (min-width: 62em) {
-  .hamburger {
-    display: none;
+  .header .btn-wrapper {
+    display: block;
   }
-}
-.hamburger .line {
-  height: 2px;
-  background: #fff;
-  width: 100%;
-  margin-bottom: 6px;
-}
-.hamburger .line--2 {
-  width: 90%;
-}
-.hamburger .line--3 {
-  margin-bottom: 0px;
-  width: 75%;
 }
 
 .overlay {
@@ -12101,6 +12077,32 @@ p, ul, ol, body {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.hamburgur .menu-line {
+  height: 3px;
+  width: 32px;
+  background: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+.hamburgur .menu-line:last-child {
+  width: 24px;
+}
+.hamburgur--mobile {
+  display: block;
+}
+@media only screen and (min-width: 62em) {
+  .hamburgur--mobile {
+    display: none;
+  }
+}
+.hamburgur:hover {
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  padding-block: 3em !important;
 }
 
 .footer__top {
