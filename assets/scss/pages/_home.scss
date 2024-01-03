@@ -9,7 +9,6 @@
 .hero{
     background-image: radial-gradient(circle at 82% 57%, #515151, $clr-primary 56%);
     position: relative;
-
     &__stat-title{
         color:$clr-grey-light-5;
         font-size: rem(16);
@@ -38,7 +37,7 @@
         }
     }
     &__wrapper{
-        background-image: url("/assets/images/home/arrowfish-a.svg");
+        background-image: url("../assets/images/home/arrowfish-a.svg");
         background-repeat: no-repeat;
         background-position: 115% bottom;
         background-size: contain;
@@ -49,7 +48,6 @@
             background-position: 100% bottom;
         }
     }
-
 }
 
 .marquee-container{
@@ -88,8 +86,7 @@
 }
 
 .experiences-box{
-    width: rem(120);
-    height:  rem(120);
+    @include dimensions( rem(120), rem(120));
     border: 2px solid $clr-white;
     background-color: $clr-primary;
     @include flex-center;
@@ -99,18 +96,15 @@
     top: 70%;
     left: 0px;
     @include breakpoint-sm{
-        width: rem(140);
-        height:  rem(140);
+        @include dimensions( rem(140), rem(140));
         left: -20px;
     }
     @include breakpoint-md{
-        width: rem(160);
-        height:  rem(160);
+        @include dimensions( rem(160), rem(160));
         left: -30px;
     }
     @include breakpoint-lg{
-        width: rem(180);
-        height:  rem(180);
+        @include dimensions( rem(180), rem(180));
     }
     h1, p{
         color:$clr-white;
@@ -149,6 +143,9 @@
         padding-left: em(16);
         @include breakpoint-sm{
             padding-left: em(64);
+        }
+        @include breakpoint-xxl{
+            padding-left: em(96);
         }
     }
     .step-card{
@@ -190,7 +187,6 @@
 .testimonials{
     background-color: $clr-primary;
     &__card{
-        // min-height: 446px;
         padding:em(16);
         background-color: $clr-dark-1;
         text-align:left;
@@ -213,21 +209,20 @@
                 }
             }
             p{
-                font-size: 16px;
+                font-size: rem(16);
                 line-height: 1.75;
             }     
         }
         .card-footer{
             figure{
-                display: flex;
-                align-items: center;
+                @include flex-center-vertical;
                 flex-wrap: wrap;
                 gap:rem(16);
                 h6{
-                    font-size: 20px;
+                    font-size: rem(20);
                 }
                 p{
-                    font-size: 16px;
+                    font-size: rem(16);
                     line-height: 1.25;
                 }
             }
@@ -247,19 +242,25 @@
 .services{
     background: $clr-tertiary;
     .service-card{
-        // max-width: 287px;
-        min-height: 160px;
         padding: em(18);
         box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.12);
         background-color: $clr-white;
-        border:1px solid $clr-white;
-        @include transition(border-color, 0.45s, ease-in-out);
+        border:2px solid $clr-white;
+        @include transition(all, 0.35s, ease-in-out);
         @include breakpoint-xl{
             padding: em(24); 
         }
         &:hover{
             cursor: pointer;
-            border-color: $clr-secondary;
+            background-color: $clr-secondary;
+            h5{
+                color:$clr-white;
+            }
+            svg {
+                path{
+                    fill:$clr-white;
+                }
+            }
         }
     }
 }
@@ -267,8 +268,8 @@
 .cta{
     background-image: radial-gradient(circle at 82% 57%, #515151, $clr-primary  57%);
     &__figure{
-        display: flex;
-        align-items: center;
+        @include flex-center-vertical;
+        flex-wrap: wrap;
         figcaption{
             small{
                 display: flex;
@@ -291,8 +292,7 @@
         padding-block: em(106);
     }
     figure{
-        width: rem(80);
-        height: rem(80);
+        @include dimensions(rem(80), rem(80));
         padding: 21px;
         background-color: $clr-secondary;
         @include flex-center;
@@ -303,9 +303,9 @@
         line-height: 1.78;
         font-weight: 800;
         color:$clr-secondary;
-        display: flex;
-        align-items: center;
+        @include flex-center-vertical;
         margin-top: rem(8);
+        width: 50%;
         @include transition(transform, 0.35s, ease-out);
         @include breakpoint-sm{
             margin-top: rem(16);

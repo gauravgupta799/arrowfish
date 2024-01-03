@@ -11177,6 +11177,8 @@ p, ul, ol, body {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  transition: transform 0.5s ease-in-out;
+  transition-duration: 1s;
 }
 
 .loader {
@@ -11303,25 +11305,33 @@ p, ul, ol, body {
     font-size: 1.25rem;
   }
 }
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
 .btn:hover {
+  color: #c8102e;
   cursor: pointer;
+}
+.btn:hover::before {
+  left: 0%;
+  z-index: -1;
 }
 
 .btn--primary {
-  background-color: #c8102e;
-}
-.btn--primary:hover {
-  background: #fff;
-  color: #c8102e;
   outline: 1px solid #c8102e;
+  background-color: #c8102e;
 }
 
 .btn--secondary {
   background: transparent;
   border: 1px solid #fff;
-}
-.btn--secondary::before, .btn--secondary::after {
-  background-color: #c8102e;
 }
 
 .btn--tertiary {
@@ -11352,16 +11362,6 @@ p, ul, ol, body {
 }
 .btn--outline:hover {
   border-color: #fff;
-}
-
-.btn--primary::before, .btn--primary::after,
-.btn--tertiary::before,
-.btn--tertiary::after,
-.btn--transparent::before,
-.btn--transparent::after,
-.btn--outline::before,
-.btn--outline::after {
-  background-color: #000;
 }
 
 .btn--tertiary:hover,
@@ -11396,7 +11396,7 @@ p, ul, ol, body {
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #b2b2b2;
   padding-block: 1.5em;
 }
 
@@ -11458,7 +11458,7 @@ p, ul, ol, body {
 }
 .faq-answer.show-answer {
   transition-duration: 1s;
-  max-height: 1000px; /* Adjust this value based on your content */
+  max-height: 62.5rem; /* Adjust this value based on your content */
 }
 .faq-answer p {
   margin: 0;
@@ -11466,12 +11466,23 @@ p, ul, ol, body {
 }
 
 .form__group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   position: relative;
+}
+.form__group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  color: #000;
+  padding-left: 1em;
+  border-radius: 4px;
 }
 .form__control {
   width: 100%;
-  background: #f4f4f4;
+  background: #f9f9f9;
   border: none;
   padding: 0.75em 1.5em;
   color: #000;
@@ -11487,7 +11498,29 @@ p, ul, ol, body {
   outline-width: 2px;
 }
 .form__textarea {
-  min-height: 114px;
+  min-height: 7.5rem;
+}
+
+.form__textarea + label {
+  position: absolute;
+  top: 25%;
+}
+
+.form__control:not(:-moz-placeholder-shown) + label {
+  font-size: 0.875rem;
+  top: 0;
+  color: #2e2e2e;
+  background: #f9f9f9;
+  padding-inline: 6px;
+}
+
+.form__control:focus + label,
+.form__control:not(:placeholder-shown) + label {
+  font-size: 0.875rem;
+  top: 0;
+  color: #2e2e2e;
+  background: #f9f9f9;
+  padding-inline: 6px;
 }
 
 .form-wrapper {
@@ -11543,7 +11576,7 @@ p, ul, ol, body {
   }
 }
 .hero__wrapper {
-  background-image: url("/assets/images/home/arrowfish-a.svg");
+  background-image: url("../assets/images/home/arrowfish-a.svg");
   background-repeat: no-repeat;
   background-position: 115% bottom;
   background-size: contain;
@@ -11667,6 +11700,11 @@ p, ul, ol, body {
     padding-left: 4em;
   }
 }
+@media only screen and (min-width: 100em) {
+  .steps__swiperContainer {
+    padding-left: 6em;
+  }
+}
 .steps .step-card {
   height: 17.5rem;
   padding-inline: 1em;
@@ -11730,7 +11768,7 @@ p, ul, ol, body {
   text-transform: uppercase;
 }
 .testimonials__card .card-content p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 .testimonials__card .card-footer figure {
@@ -11740,10 +11778,10 @@ p, ul, ol, body {
   gap: 1rem;
 }
 .testimonials__card .card-footer figure h6 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .testimonials__card .card-footer figure p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
 }
 .testimonials figcaption small {
@@ -11755,12 +11793,11 @@ p, ul, ol, body {
   background: #f9f9f9;
 }
 .services .service-card {
-  min-height: 160px;
   padding: 1.125em;
   box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.12);
   background-color: #fff;
-  border: 1px solid #fff;
-  transition: border-color 0.45s ease-in-out;
+  border: 2px solid #fff;
+  transition: all 0.35s ease-in-out;
 }
 @media only screen and (min-width: 85.375em) {
   .services .service-card {
@@ -11769,7 +11806,13 @@ p, ul, ol, body {
 }
 .services .service-card:hover {
   cursor: pointer;
-  border-color: #c8102e;
+  background-color: #c8102e;
+}
+.services .service-card:hover h5 {
+  color: #fff;
+}
+.services .service-card:hover svg path {
+  fill: #fff;
 }
 
 .cta {
@@ -11778,6 +11821,7 @@ p, ul, ol, body {
 .cta__figure {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .cta__figure figcaption small {
   display: flex;
@@ -11816,6 +11860,7 @@ p, ul, ol, body {
   display: flex;
   align-items: center;
   margin-top: 0.5rem;
+  width: 50%;
   transition: transform 0.35s ease-out;
 }
 @media only screen and (min-width: 36em) {
@@ -12080,8 +12125,8 @@ p, ul, ol, body {
 }
 
 .hamburgur .menu-line {
-  height: 3px;
-  width: 32px;
+  width: 2rem;
+  height: 0.1875rem;
   background: #fff;
   display: block;
   margin-bottom: 5px;

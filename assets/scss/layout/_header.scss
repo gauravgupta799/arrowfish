@@ -41,7 +41,6 @@
         border-bottom: 0.5px solid $clr-white;
     }
 
-
     &__navbar{
         width: 100%;
         display: none;
@@ -235,8 +234,7 @@
 
 .hamburgur{
     .menu-line{
-        height: 3px;
-        width: 32px;
+        @include dimensions(rem(32),rem(3));
         background: $clr-white;
         display: block;
         margin-bottom: 5px;

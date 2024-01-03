@@ -7,12 +7,23 @@
 
 .form{
     &__group{
-        margin-bottom: rem(16);
+        margin-bottom: rem(20);
         position: relative;
+        label{
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: 0.3s ease-out;
+            color: $clr-primary;
+            padding-left: em(16);
+            @include border-radius(4px);
+        }
     }
     &__control{
         width: 100%;
-        background: $clr-white-90;
+        background: $clr-tertiary;
         border:none;
         padding: em(12) em(24);
         color:$clr-primary;
@@ -28,15 +39,26 @@
         }
     }
     &__textarea{
-        min-height: 114px;
+        min-height: rem(120); 
     }
+}
+.form__textarea + label{
+    position: absolute;
+    top: 25%;
+}
+
+.form__control:focus + label,
+.form__control:not(:placeholder-shown) + label {
+  font-size: rem(14);
+  top: 0;
+  color: $clr-dark-1;
+  background: $clr-tertiary;
+  padding-inline:6px;
 }
 
 .form-wrapper {
-    // min-height: 587px;
-    // margin-bottom: rem(16);
     padding: em(24) em(16) em(24);
-    border-radius: 4px;
+    @include border-radius(4px);
     background-color: $clr-white;
     @include breakpoint-sm{
         padding: em(24) em(24) em(28);
@@ -48,62 +70,3 @@
         padding: em(24) em(42) em(32);
     }
 }
-
-
-// Custome Checkbox
-// .form__group .form-check-input {
-//     padding: 0;
-//     @include dimensions(initial, initial);
-//     margin-bottom: 0;
-//     display: none;
-//     cursor: pointer;
-// }
-  
-// .form__group .form-check-label{
-//     text-transform: capitalize;
-//     position: relative;
-//     cursor: pointer;
-//     @include flex-center-vertical;
-// }
-  
-// .form__group .form-check-label::before {
-//     content:'';
-//     background-color: transparent;
-//     border: 1.8px solid $clr-primary;
-//     @include border-radius(1px);
-//     padding: em(8);
-//     display: inline-block;
-//     position: relative;
-//     vertical-align: middle;
-//     cursor: pointer;
-//     margin-right: rem(10);
-//     @include breakpoint-md{
-//         margin-right: rem(32);
-//         padding: em(10);
-//     }
-// }
-// .form__group .form-check-input:checked + .form-check-label::before{
-//     border-color: $clr-secondary;
-// }
-  
-// .form__group .form-check-input:checked + .form-check-label::after {
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     top: 8px;
-//     left: 6px;
-//     @include dimensions(rem(6.4), rem(12));
-//     border: 1.8px solid $clr-secondary;
-//     border-width: 0 1px 1px 0;
-//     transform: rotate(45deg);
-
-//     @include breakpoint-md{
-//         left: 8px;
-//         width:rem(8);
-//     }
-//     @include breakpoint-lg{
-//         top: 10px;
-//         left: 7px;
-//         height: rem(16);
-//     }
-// }

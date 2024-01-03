@@ -1,4 +1,9 @@
 
+window.onload = function() {
+  const loader = document.querySelector(".loader-container");
+  loader.style.transform = "translateY(-100%)";
+}
+
 //====== Sticky header start ======
 function toggleHeaderSticky(scrollY){
     const header = document.querySelector(".header");
@@ -36,6 +41,9 @@ var swiper = new Swiper(".steps-swiper", {
   // centeredSlides: true,
   spaceBetween: 20,
   grabCursor: true,
+  autoplay:{
+    delay:3000,
+  },
   breakpoints:{
     576:{
       slidesPerView: 2.2,
