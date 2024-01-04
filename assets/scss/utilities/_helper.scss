@@ -19,6 +19,15 @@
 .list-none{
     list-style: none;
 }
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-center-h{
+    display: flex;
+    justify-content: center;
+}
 .text-primary{
     color:$clr-primary;
 }
@@ -69,23 +78,23 @@
 .relative{
     position: relative;
 }
+.fz-14{
+    font-size: rem(14) !important;
+    line-height: 2.29 !important;
+}
+
 .fz-16{
     font-size: rem(16);
-    @include breakpoint-xl{
-        font-size: rem(18);
-    }
     @include breakpoint-xxl{
-        font-size: rem(20);
+        font-size: rem(18);
     }
 }
 
 .divider{
-    height: 1px;
-    width: 100%;
-    background:$clr-grey;
+    // height: 0.4px;
+    // background: $clr-white;
+    border-bottom: 0.5px solid $clr-white;
 }
-
-
 .heading-wrapper{
     overflow: hidden;
     position: relative;

@@ -26,27 +26,37 @@
     }
     &__right{
         display: flex;
-        align-items: flex-end;
-        @media only screen and (max-width:992px) and (min-width:1400px) {
-            position: absolute;
-            bottom: 0;
-            img{
-                position: relative;
-                left: -100px;
-            }
+        align-items: center;
+        justify-content: flex-end;
+        // @include breakpoint-lg{
+        //     display: none;
+        // }
+        @media only screen and (min-width:1200px) {
+            display: none;
         }
+        // @media only screen and (max-width:992px) and (min-width:1400px) {
+        //     position: absolute;
+        //     bottom: 0;
+        //     img{
+        //         position: relative;
+        //         left: -100px;
+        //     }
+        // }
     }
     &__wrapper{
-        background-image: url("../assets/images/home/arrowfish-a.svg");
-        background-repeat: no-repeat;
-        background-position: 115% bottom;
-        background-size: contain;
-        @include breakpoint-lg{
-            background-size:auto;
+    
+        @media only screen and (min-width:1200px) {
+            background-image: url("../assets/images/home/1x.png");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
         }
-        @include breakpoint-xxl{
-            background-position: 100% bottom;
-        }
+
+
+        // background-position: 115% bottom;
+        // @include breakpoint-xxl{
+        //     background-position: 100% bottom;
+        // }
     }
 }
 
@@ -85,38 +95,60 @@
     }
 }
 
-.experiences-box{
-    @include dimensions( rem(120), rem(120));
+.yearsBox{
+    position: absolute;
     border: 2px solid $clr-white;
-    background-color: $clr-primary;
+    @include border-radius(50%);
     @include flex-center;
     flex-direction: column;
-    @include border-radius(50%);
-    position: absolute;
-    top: 70%;
-    left: 0px;
-    @include breakpoint-sm{
-        @include dimensions( rem(140), rem(140));
-        left: -20px;
-    }
-    @include breakpoint-md{
-        @include dimensions( rem(160), rem(160));
-        left: -30px;
-    }
-    @include breakpoint-lg{
-        @include dimensions( rem(180), rem(180));
-    }
+    background-color: $clr-secondary;
     h1, p{
         color:$clr-white;
         text-align: center;
     }
     p{
         font-size: rem(14);
-        line-height: 1.25;
+        line-height: 2.29;
         text-transform: capitalize;
-        @include breakpoint-md{
-            font-size: rem(16);
+    }
+    @include dimensions( rem(160), rem(160));
+    top: 58%;
+    left: 0px;
+    @include breakpoint-lg{
+        @include dimensions( rem(180), rem(180));
+        left: -20px;
+    }
+    @include breakpoint-xl{
+        @include dimensions( rem(200), rem(200));
+    }
+
+    &--black{
+        @include dimensions( rem(120), rem(120));
+        background-color: $clr-primary;
+        top: 70%;
+        left: 0px;
+        @include breakpoint-sm{
+            @include dimensions( rem(140), rem(140));
+            left: -20px;
         }
+        @include breakpoint-md{
+            @include dimensions( rem(160), rem(160));
+            left: -30px;
+        }
+        @include breakpoint-lg{
+            @include dimensions( rem(180), rem(180));
+        }
+        h1{
+            font-size: clamp(rem(28) , 3vw + rem(16), rem(52));
+            line-height: 1.2;
+        }
+        p{
+            font-size: rem(16);
+            line-height: 1.25;
+        }
+    }
+    &--experience{
+        top: 60%;
     }
 }
 
@@ -130,11 +162,6 @@
     }
     h4, p, small{
         color:$clr-white;
-    }
-    &--experience{
-        background: $clr-secondary;
-        top: 62%;
-        left: -10px;
     }
 }
 
@@ -163,7 +190,7 @@
             left: 32px;
             height: 1px;
             width: 100%;
-            background:linear-gradient(to right, #303030 1px, transparent 1px);
+            background:linear-gradient(to right, #303030 2px, transparent 1px);
             background-size: 3px 1px; /* Set the size of each dot */
             background-repeat: repeat-x; /* Repeat the dots horizontally */
             z-index: -1;
@@ -171,10 +198,11 @@
         .icon-box{
             max-width: 90px;
             height: 90px;
-            padding: 25px;
+            padding: 24px;
             background-color: $clr-secondary;
             @include border-radius(50%);
             position: absolute;
+            @include flex-center;
             top:-40px;
         }
         p{
@@ -196,9 +224,9 @@
         h6, p{
             color:$clr-white;
         }
-        .stars-img{
-            margin-left: -10px;
-        }
+        // .stars-img{
+        //     margin-left: -10px;
+        // }
         .card-content{
             h6{
                 font-weight: 400 !important;

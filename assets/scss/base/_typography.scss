@@ -17,9 +17,9 @@ $breakpoints: (
 
 // Null is mobile, no breakpoint.
 $p-font-sizes: (
-  null:(rem(16), rem(32)), // Font sizes and line height 
-  sm: (rem(18), rem(32)),
-  md: (rem(18), rem(32)),
+  null:(rem(16), rem(24)), // Font sizes and line height 
+  sm: (rem(18), rem(28)),
+  md: (rem(18), rem(28)),
   lg: (rem(20), rem(32)),
   xl: (rem(20), rem(32)),
   xxl:(rem(22), rem(36)), 
@@ -27,10 +27,10 @@ $p-font-sizes: (
 
 
 $h1-font-sizes: (
-  null: (rem(48), rem(52)),   
+  null: (rem(44), rem(46)),   
   sm: (rem(48), rem(52)),
-  md: (rem(54), rem(58)),
-  lg: (rem(60), rem(64)),
+  md: (rem(54), rem(56)),
+  lg: (rem(60), rem(62)),
   xl: (rem(66), rem(68)),
   xxl: (rem(72), rem(76)),
 );
@@ -38,47 +38,47 @@ $h1-font-sizes: (
 $h2-font-sizes:(
   null:(rem(36), rem(54)), 
   sm:(rem(36), rem(54)),
-  md:(rem(40), rem(60)),
-  lg:(rem(44), rem(66)),
-  xl:(rem(44), rem(66)),
-  xxl:(rem(48), rem(72)),
+  md:(rem(40), rem(48)),
+  lg:(rem(44), rem(52)),
+  xl:(rem(44), rem(52)),
+  xxl:(rem(48), rem(56)),
 );
 
 $h3-font-sizes: (
-  null:(rem(32), rem(48)), 
-  sm:(rem(32), rem(48)),
-  md:(rem(36), rem(54)),
-  lg:(rem(40), rem(60)),
-  xl:(rem(40), rem(60)),
-  xxl:(rem(44), rem(72)),
+  null:(rem(32), rem(38)), 
+  sm:(rem(32), rem(38)),
+  md:(rem(36), rem(44)),
+  lg:(rem(40), rem(48)),
+  xl:(rem(40), rem(48)),
+  xxl:(rem(44), rem(52)),
 );
 
 $h4-font-sizes: (
-  null:(rem(24), rem(36)), 
-  sm :(rem(24), rem(36)),
-  md :(rem(28), rem(42)),
-  lg :(rem(32), rem(48)),
-  xl :(rem(32), rem(48)),
-  xxl :(rem(36), rem(54)),
+  null:(rem(24), rem(28)), 
+  sm :(rem(24), rem(28)),
+  md :(rem(28), rem(32)),
+  lg :(rem(32), rem(38)),
+  xl :(rem(32), rem(38)),
+  xxl :(rem(36), rem(44)),
 );
 
 $h5-font-sizes: (
-  null:(rem(22), rem(33)), 
-  sm :(rem(22), rem(33)),
-  md :(rem(24), rem(36)),
-  lg :(rem(28), rem(42)),
-  xl :(rem(28), rem(42)),
-  xxl:(rem(32), rem(48)),
+  null:(rem(22), rem(26)), 
+  sm :(rem(22), rem(26)),
+  md :(rem(24), rem(28)),
+  lg :(rem(28), rem(32)),
+  xl :(rem(28), rem(32)),
+  xxl:(rem(32), rem(38)),
 ); 
 
 
 $h6-font-sizes: (
-  null: (rem(20), rem(30)),
-  sm : (rem(20), rem(30)),
-  md : (rem(22), rem(33)),
-  lg : (rem(24), rem(36)),
-  xl:  (rem(24), rem(36)),
-  xxl: (rem(28), rem(42)),
+  null: (rem(20), rem(24)),
+  sm : (rem(20), rem(24)),
+  md : (rem(22), rem(26)),
+  lg : (rem(24), rem(28)),
+  xl:  (rem(24), rem(28)),
+  xxl: (rem(28), rem(32)),
 ); 
 
 

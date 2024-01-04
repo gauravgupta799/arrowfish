@@ -30,15 +30,14 @@
             }
 
         }
-        .header__wrapper{
-            border:none;
+        .divider{
+            display: none;
         }
     }
     &__wrapper{
         width: 100%;
         @include flex-center-vertical;
         justify-content: space-between;
-        border-bottom: 0.5px solid $clr-white;
     }
 
     &__navbar{
@@ -205,10 +204,14 @@
         }
     }
     .btn-wrapper{
-        display: none;
-        @include breakpoint-lg{
-            display: block;
-        }
+        display: flex;
+        // display: none;
+        // @include breakpoint-lg{
+        //     display: flex;
+        // }
+    }
+    .divider{
+        margin-top: rem(24);
     }
 }
 

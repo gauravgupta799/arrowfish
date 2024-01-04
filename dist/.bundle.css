@@ -915,8 +915,8 @@ label {
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3.25rem;
+  font-size: 2.75rem;
+  line-height: 2.875rem;
 }
 @media screen and (min-width: 36em) {
   h1 {
@@ -927,13 +927,13 @@ h1 {
 @media screen and (min-width: 48em) {
   h1 {
     font-size: 3.375rem;
-    line-height: 3.625rem;
+    line-height: 3.5rem;
   }
 }
 @media screen and (min-width: 62em) {
   h1 {
     font-size: 3.75rem;
-    line-height: 4rem;
+    line-height: 3.875rem;
   }
 }
 @media screen and (min-width: 85.375em) {
@@ -962,165 +962,165 @@ h2 {
 @media screen and (min-width: 48em) {
   h2 {
     font-size: 2.5rem;
-    line-height: 3.75rem;
+    line-height: 3rem;
   }
 }
 @media screen and (min-width: 62em) {
   h2 {
     font-size: 2.75rem;
-    line-height: 4.125rem;
+    line-height: 3.25rem;
   }
 }
 @media screen and (min-width: 85.375em) {
   h2 {
     font-size: 2.75rem;
-    line-height: 4.125rem;
+    line-height: 3.25rem;
   }
 }
 @media screen and (min-width: 100em) {
   h2 {
     font-size: 3rem;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
   }
 }
 
 h3 {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.375rem;
 }
 @media screen and (min-width: 36em) {
   h3 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.375rem;
   }
 }
 @media screen and (min-width: 48em) {
   h3 {
     font-size: 2.25rem;
-    line-height: 3.375rem;
+    line-height: 2.75rem;
   }
 }
 @media screen and (min-width: 62em) {
   h3 {
     font-size: 2.5rem;
-    line-height: 3.75rem;
+    line-height: 3rem;
   }
 }
 @media screen and (min-width: 85.375em) {
   h3 {
     font-size: 2.5rem;
-    line-height: 3.75rem;
+    line-height: 3rem;
   }
 }
 @media screen and (min-width: 100em) {
   h3 {
     font-size: 2.75rem;
-    line-height: 4.5rem;
+    line-height: 3.25rem;
   }
 }
 
 h4 {
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 1.75rem;
 }
 @media screen and (min-width: 36em) {
   h4 {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 48em) {
   h4 {
     font-size: 1.75rem;
-    line-height: 2.625rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 62em) {
   h4 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.375rem;
   }
 }
 @media screen and (min-width: 85.375em) {
   h4 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.375rem;
   }
 }
 @media screen and (min-width: 100em) {
   h4 {
     font-size: 2.25rem;
-    line-height: 3.375rem;
+    line-height: 2.75rem;
   }
 }
 
 h5 {
   font-size: 1.375rem;
-  line-height: 2.0625rem;
+  line-height: 1.625rem;
 }
 @media screen and (min-width: 36em) {
   h5 {
     font-size: 1.375rem;
-    line-height: 2.0625rem;
+    line-height: 1.625rem;
   }
 }
 @media screen and (min-width: 48em) {
   h5 {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 62em) {
   h5 {
     font-size: 1.75rem;
-    line-height: 2.625rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 85.375em) {
   h5 {
     font-size: 1.75rem;
-    line-height: 2.625rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 100em) {
   h5 {
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.375rem;
   }
 }
 
 h6 {
   font-size: 1.25rem;
-  line-height: 1.875rem;
+  line-height: 1.5rem;
 }
 @media screen and (min-width: 36em) {
   h6 {
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 48em) {
   h6 {
     font-size: 1.375rem;
-    line-height: 2.0625rem;
+    line-height: 1.625rem;
   }
 }
 @media screen and (min-width: 62em) {
   h6 {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 85.375em) {
   h6 {
     font-size: 1.5rem;
-    line-height: 2.25rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 100em) {
   h6 {
     font-size: 1.75rem;
-    line-height: 2.625rem;
+    line-height: 2rem;
   }
 }
 
@@ -1131,19 +1131,19 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, body {
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-family: "RedHatDisplay Regular", sans-serif;
 }
 @media screen and (min-width: 36em) {
   p, ul, ol, body {
     font-size: 1.125rem;
-    line-height: 2rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 48em) {
   p, ul, ol, body {
     font-size: 1.125rem;
-    line-height: 2rem;
+    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 62em) {
@@ -1183,6 +1183,17 @@ p, ul, ol, body {
 
 .list-none {
   list-style: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-h {
+  display: flex;
+  justify-content: center;
 }
 
 .text-primary {
@@ -1251,24 +1262,22 @@ p, ul, ol, body {
   position: relative;
 }
 
+.fz-14 {
+  font-size: 0.875rem !important;
+  line-height: 2.29 !important;
+}
+
 .fz-16 {
   font-size: 1rem;
 }
-@media only screen and (min-width: 85.375em) {
+@media only screen and (min-width: 100em) {
   .fz-16 {
     font-size: 1.125rem;
   }
 }
-@media only screen and (min-width: 100em) {
-  .fz-16 {
-    font-size: 1.25rem;
-  }
-}
 
 .divider {
-  height: 1px;
-  width: 100%;
-  background: #707070;
+  border-bottom: 0.5px solid #fff;
 }
 
 .heading-wrapper {
@@ -11563,32 +11572,20 @@ p, ul, ol, body {
 }
 .hero__right {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-@media only screen and (max-width: 992px) and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .hero__right {
-    position: absolute;
-    bottom: 0;
-  }
-  .hero__right img {
-    position: relative;
-    left: -100px;
+    display: none;
   }
 }
-.hero__wrapper {
-  background-image: url("../assets/images/home/arrowfish-a.svg");
-  background-repeat: no-repeat;
-  background-position: 115% bottom;
-  background-size: contain;
-}
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 1200px) {
   .hero__wrapper {
-    background-size: auto;
-  }
-}
-@media only screen and (min-width: 100em) {
-  .hero__wrapper {
-    background-position: 100% bottom;
+    background-image: url("../assets/images/home/1x.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
   }
 }
 
@@ -11625,53 +11622,79 @@ p, ul, ol, body {
   }
 }
 
-.experiences-box {
-  width: 7.5rem;
-  height: 7.5rem;
+.yearsBox {
+  position: absolute;
   border: 2px solid #fff;
-  background-color: #000;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50%;
-  position: absolute;
+  background-color: #c8102e;
+  width: 10rem;
+  height: 10rem;
+  top: 58%;
+  left: 0px;
+}
+.yearsBox h1, .yearsBox p {
+  color: #fff;
+  text-align: center;
+}
+.yearsBox p {
+  font-size: 0.875rem;
+  line-height: 2.29;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 62em) {
+  .yearsBox {
+    width: 11.25rem;
+    height: 11.25rem;
+    left: -20px;
+  }
+}
+@media only screen and (min-width: 85.375em) {
+  .yearsBox {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
+.yearsBox--black {
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: #000;
   top: 70%;
   left: 0px;
 }
 @media only screen and (min-width: 36em) {
-  .experiences-box {
+  .yearsBox--black {
     width: 8.75rem;
     height: 8.75rem;
     left: -20px;
   }
 }
 @media only screen and (min-width: 48em) {
-  .experiences-box {
+  .yearsBox--black {
     width: 10rem;
     height: 10rem;
     left: -30px;
   }
 }
 @media only screen and (min-width: 62em) {
-  .experiences-box {
+  .yearsBox--black {
     width: 11.25rem;
     height: 11.25rem;
   }
 }
-.experiences-box h1, .experiences-box p {
-  color: #fff;
-  text-align: center;
+.yearsBox--black h1 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 3.25rem);
+  line-height: 1.2;
 }
-.experiences-box p {
-  font-size: 0.875rem;
+.yearsBox--black p {
+  font-size: 1rem;
   line-height: 1.25;
-  text-transform: capitalize;
 }
-@media only screen and (min-width: 48em) {
-  .experiences-box p {
-    font-size: 1rem;
-  }
+.yearsBox--experience {
+  top: 60%;
 }
 
 .about-owner {
@@ -11685,11 +11708,6 @@ p, ul, ol, body {
 }
 .about-owner h4, .about-owner p, .about-owner small {
   color: #fff;
-}
-.about-owner--experience {
-  background: #c8102e;
-  top: 62%;
-  left: -10px;
 }
 
 .steps__swiperContainer {
@@ -11721,7 +11739,7 @@ p, ul, ol, body {
   left: 32px;
   height: 1px;
   width: 100%;
-  background: linear-gradient(to right, #303030 1px, transparent 1px);
+  background: linear-gradient(to right, #303030 2px, transparent 1px);
   background-size: 3px 1px; /* Set the size of each dot */
   background-repeat: repeat-x; /* Repeat the dots horizontally */
   z-index: -1;
@@ -11729,10 +11747,13 @@ p, ul, ol, body {
 .steps .step-card .icon-box {
   max-width: 90px;
   height: 90px;
-  padding: 25px;
+  padding: 24px;
   background-color: #c8102e;
   border-radius: 50%;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: -40px;
 }
 .steps .step-card p {
@@ -11755,9 +11776,6 @@ p, ul, ol, body {
 }
 .testimonials__card h6, .testimonials__card p {
   color: #fff;
-}
-.testimonials__card .stars-img {
-  margin-left: -10px;
 }
 .testimonials__card .card-content h6 {
   font-weight: 400 !important;
@@ -11903,15 +11921,14 @@ p, ul, ol, body {
     opacity: 1;
   }
 }
-.header.sticky .header__wrapper {
-  border: none;
+.header.sticky .divider {
+  display: none;
 }
 .header__wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.5px solid #fff;
 }
 .header__navbar {
   width: 100%;
@@ -12094,12 +12111,10 @@ p, ul, ol, body {
   }
 }
 .header .btn-wrapper {
-  display: none;
+  display: flex;
 }
-@media only screen and (min-width: 62em) {
-  .header .btn-wrapper {
-    display: block;
-  }
+.header .divider {
+  margin-top: 1.5rem;
 }
 
 .overlay {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logos/arrowfish-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="dist/bundle.min.css">
     <title>Arrowfish | Landing Page</title>
 </head>
@@ -18,7 +19,7 @@
             <div class="page-container">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="/index.html" class="">
+                        <a href="/index.html" class="d-flex">
                             <img src="./assets/logos/arrowfish-logo.svg" alt="arrofish's logo" class="img-fluid ">
                         </a>
                     </div>
@@ -27,12 +28,13 @@
                             <span>Get A Quote</span>
                         </a>
                     </div>
-                    <span class="hamburgur hamburgur--mobile">
+                    <!-- <span class="hamburgur hamburgur--mobile">
                         <span class="menu-line"></span>
                         <span class="menu-line"></span>
                         <span class="menu-line"></span>
-                    </span>
+                    </span> -->
                 </div>
+                <div class="divider"></div>
             </div>
         </div>
         <!-- Dektop Menu end -->
@@ -57,7 +59,7 @@
 
     <main class="main">
         <!-- Hero section start -->
-        <section class="hero pt--10 pt--lg--14 pt--xxl--16">
+        <section class="hero pt--10 pt--xl--10 pt--xxl--17">
             <div class="hero__wrapper">
                 <div class="page-container">
                     <div class="row">
@@ -75,24 +77,24 @@
                                 </a>
                             </div>
                             <div class="hero__stats-container mt--2 mt--lg--5">
-                                <div class="hero__stat-title">
-                                    <p>trusted 1000+ Indivisuals Companies & Franchies</p>
-                                </div>
+                                 <p class="hero__stat-title">
+                                    Trusted 1000+ Indivisuals Companies & Franchies
+                                </p>
                                 <div class="hero__stats-wrapper mt--1">
                                     <div class="row">
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
                                             <div class="hero__stat">
                                                 <h3 class="text-white">1578</h3>
                                                 <p class="">Business Valuations</p>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 mt--2 mt--sm--0">
+                                        <div class="col-sm-6 col-md-4 col-lg-5 col-xl-4 mt--2 mt--sm--0">
                                             <div class="hero__stat">
                                                 <h3 class="text-white">200+</h3>
                                                 <p class="">Years of combined experience</p>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-4 mt--2 mt--md--0">
+                                        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 mt--2 mt--md--0">
                                             <div class="hero__stat">
                                                 <h3 class="text-white">6</h3>
                                                 <p class="">Offices, 6 States</p>
@@ -102,12 +104,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-flex">
+                        <!-- <div class="col-lg-4 d-flex">
                             <div class="hero__right">
-                                <img src="./assets/images/home/young-businessman-analyzing-data-using-his-digital@2x.png" alt="" class="img-fluid">
+                                <img src="./assets/images/home/1x.png" alt="" class="img-fluid">                     
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                </div>
+                <div class="hero__right">
+                    <img src="./assets/images/home/1x.png" alt="" class="img-fluid">                     
                 </div>
             </div>
         </section>
@@ -142,7 +147,7 @@
         <section class="business-value mt--6 mt--lg--12">
             <div class="page-container">
                 <div class="row">
-                    <div class="col-lg-6 mt--5 mt--md--0 d-flex flex-column justify-content-center order-2 order-md-0">
+                    <div class="col-lg-6 mt--5 mt--lg--0 order-2 order-lg-0 flex-center-h flex-column">
                         <h2 class="">
                             Know your business <br> value for smarter future decisions
                         </h2>
@@ -155,17 +160,18 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1 order-1 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-5 offset-lg-1 order-1 flex-center">
                         <figure class="">
                             <img src="./assets/images/home/Mc_Dowell_Knight_Business_Litigat.png" alt=""
                             class="img-fluid" loading="lazy">
-                            <figcaption class="experiences-box">
-                                <h1 class="d-flex"> 25+ </h1>
+                            <figcaption class="yearsBox yearsBox--black">
+                                <h1 class="d-flex">25+</h1>
                                 <p class="mt--0">Years of <br> Experience</p>
                             </figcaption>
                         </figure>
                     </div>
                 </div>
+
                 <div class="row mt--8 mt--lg--15 business-value__bottom">
                     <div class="col-md-4">
                         <figure>
@@ -197,13 +203,12 @@
         <!--Buisiness-value section end -->
 
         <!--about-owner section start -->
-        <section class="about-owner mt--6 mt--lg--12 pt--1">
+        <section class="about-owner mt--6 mt--lg--12">
             <div class="page-container">
                 <div class="row">
-                    <div class="col-lg-7 d-flex flex-column justify-content-center">
+                    <div class="col-md-6 col-lg-7 py--2 py--lg--0 flex-center-h flex-column">
                         <h4 class="text-white">
-                            <q> <span>As</span> the managing partner, <span>I</span> lead our team in helping businesses understand their true worth. It's about clarity, precision, and unlocking the full potential of every venture.
-                            </q>
+                            <q><span>As</span> the managing partner, <span>I</span> lead our team in helping businesses understand their true worth. It's about clarity, precision, and unlocking the full potential of every venture.</q>
                         </h4>
                         <p class="bold mt--2">
                             Jeremiah Grant (CVA, CLCS, MBA)
@@ -215,13 +220,14 @@
                             Economic Damages and Business Valuation Expert
                         </small>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-md-6 col-lg-5 flex-center-h align-items-end">
                         <figure class="d-flex relative">
                             <img src="./assets/images/home/arrowfish-owner-img@1x.png" alt=""
                             class="img-fluid" loading="lazy">
-                            <figcaption class="experiences-box about-owner--experience">
-                                <h1 class="d-flex"> 25+ </h1>
-                                <p class="mt--0">Years of <br> Experience</p>
+                            <figcaption class="yearsBox">
+                                <img src="./assets/icons/Stars.svg" alt="">
+                                <h1 class="d-flex">25+ </h1>
+                                <p class="fz-14 mt--0">Years of Experience</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -285,7 +291,7 @@
                         <div class="swiper-slide">
                             <div class="step-card">
                                 <div class="icon-box">
-                                    <img src="./assets/icons/clients.svg" alt="" class="img-fluid">
+                                    <img src="./assets/icons/feedback.svg" alt="" class="img-fluid">
                                 </div>
                                 <h6 class="">Quality review</h6>
                                 <p class="">
@@ -296,7 +302,7 @@
                         <div class="swiper-slide">
                             <div class="step-card">
                                 <div class="icon-box">
-                                    <img src="./assets/icons/clients.svg" alt="" class="img-fluid">
+                                    <img src="./assets/icons/call.svg" alt="" class="img-fluid">
                                 </div>
                                 <h6 class="">Value presentation</h6>
                                 <p class="">
@@ -346,8 +352,8 @@
                 <div class="row mt--4 mt--lg--8 mx-auto text-center">
                     <div class="col-md-6 col-lg-4">
                         <div class="testimonials__card">
-                            <img src="./assets/icons/5-stars-icon.svg" alt=""
-                            class="img-fluid stars-img" loading="lazy">
+                            <img src="./assets/icons/5-Star.svg" alt=""
+                            class="img-fluid" loading="lazy">
                             <div class="card-content">
                                 <h6 class="">Mr. Grant was wickedly competent in his analysis and testimony.</h6>
                                 <p class="">
@@ -363,15 +369,15 @@
                                     </figcaption>
                                 </figure>
                                 <small>
-                                    <img src="./assets/icons/review-verified.png" alt="" class="img-fluid">
+                                    <img src="./assets/icons/review-verified.svg" alt="" class="img-fluid">
                                 </small>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mt--1 mt--md--0">
                         <div class="testimonials__card">
-                            <img src="./assets/icons/5-stars-icon.svg" alt=""
-                            class="img-fluid stars-img" loading="lazy">
+                            <img src="./assets/icons/5-Star.svg" alt=""
+                            class="img-fluid" loading="lazy">
                             <div class="card-content">
                                 <h6 class="">Mr. Grant was wickedly competent in his analysis and testimony.</h6>
                                 <p class="">
@@ -387,15 +393,15 @@
                                     </figcaption>
                                 </figure>
                                 <small>
-                                    <img src="./assets/icons/review-verified.png" alt="" class="img-fluid">
+                                    <img src="./assets/icons/review-verified.svg" alt="" class="img-fluid">
                                 </small>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mt--1 mt--lg--0">
                         <div class="testimonials__card">
-                            <img src="./assets/icons/5-stars-icon.svg" alt=""
-                            class="img-fluid stars-img" loading="lazy">
+                            <img src="./assets/icons/5-Star.svg" alt=""
+                            class="img-fluid" loading="lazy">
                             <div class="card-content">
                                 <h6 class="">Mr. Grant was wickedly competent in his analysis and testimony.</h6>
                                 <p class="">
@@ -411,7 +417,7 @@
                                     </figcaption>
                                 </figure>
                                 <small>
-                                    <img src="./assets/icons/review-verified.png" alt="" class="img-fluid">
+                                    <img src="./assets/icons/review-verified.svg" alt="" class="img-fluid">
                                 </small>
                             </div>
                         </div>
@@ -634,9 +640,10 @@
                     <div class="col-lg-5 offset-lg-1 d-flex align-items-end">
                         <figure class="d-flex relative text-right">
                             <img src="./assets/images/home/smiling-businessman-presenting.png" alt="" class="img-fluid" loading="lazy">
-                            <figcaption class="experiences-box about-owner--experience">
-                                <h1 class="d-flex"> 25+ </h1>
-                                <p class="mt--0">Years of <br> Experience</p>
+                            <figcaption class="yearsBox yearsBox--experience" style="border:none;">
+                                <img src="./assets/icons/Stars.svg" alt="">
+                                <h1 class="d-flex">25+ </h1>
+                                <p class="fz-14 mt--0">Years of Experience</p>
                             </figcaption>
                         </figure>
                     </div>
